@@ -21,7 +21,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/Akshita-5/Product-based-Website-MSFT-Surface-9-pro.git
+git clone https://github.com/Akshita-5/Microsoft-Surface-9-pro.git
 Navigate to the Project Directory:
 
 bash
