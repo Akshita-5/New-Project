@@ -1,311 +1,264 @@
-# 🎯 FocusMate - AI-Powered Productivity Assistant
+# 🎯 FocusMate - Complete MERN Stack Productivity Application
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org/)
-[![React Version](https://img.shields.io/badge/react-%5E18.2.0-blue)](https://reactjs.org/)
+A modern, full-stack productivity application built with **Vite + React** frontend and **Node.js + Express** backend. FocusMate helps users manage tasks and boost productivity with focus sessions.
 
-FocusMate is a comprehensive MERN stack productivity application that helps users avoid distractions, increase focus, and manage daily work/study routines with AI-powered insights and gamification.
+## ✨ Features
 
-## 🌟 Features
+### 🔐 **Authentication System**
+- User registration and login
+- JWT-based authentication
+- Protected routes
+- Password validation
+- Google OAuth ready
 
-### 🔐 Authentication & User Management
-- **Email/Password Registration & Login** with validation
-- **Google OAuth Integration** for seamless sign-in
-- **Password Reset** via email with secure tokens
-- **Profile Management** with avatars and preferences
-- **Email Verification** system
+### 📋 **Task Management**
+- Create, edit, delete tasks
+- Priority levels (Low, Medium, High, Urgent)
+- Categories (Work, Study, Fitness, Personal, etc.)
+- Due dates and time estimation
+- Subtasks and progress tracking
+- Advanced filtering and search
 
-### 🎯 Focus Sessions & Pomodoro
-- **Customizable Focus Sessions** (Pomodoro, custom durations)
-- **Real-time Timer** with beautiful circular progress bars
-- **Session Types**: Pomodoro, Deep Work, Study, Custom
-- **Break Management** with automatic notifications
-- **Distraction Tracking** and logging
-- **Session Analytics** with focus scores
+### ⏰ **Focus Sessions**
+- Pomodoro timer (25-minute focus sessions)
+- Customizable work and break intervals
+- Session tracking and analytics
+- Visual progress indicators
+- Productivity insights
 
-### 📋 Advanced Task Management
-- **CRUD Operations** for tasks with categories
-- **Priority Levels**: Low, Medium, High, Urgent
-- **Due Dates & Scheduling** with calendar integration
-- **Subtasks** with progress tracking
-- **Drag & Drop Reordering** with react-beautiful-dnd
-- **Task Categories**: Work, Study, Fitness, Personal, Health, etc.
-- **Tags & Search** functionality
-- **Recurring Tasks** support
+### � **Modern UI/UX**
+- Responsive design (mobile & desktop)
+- Dark/Light theme toggle
+- Professional interface
+- Loading states and error handling
+- Toast notifications
 
-### 🤖 AI-Powered Features
-- **Intelligent Chatbot** for productivity advice
-- **Task Suggestions** based on user patterns
-- **Productivity Analysis** with personalized insights
-- **Daily Summaries** with motivational content
-- **Smart Recommendations** for improving focus habits
+## � Tech Stack
 
-### 🏆 Gamification System
-- **XP & Leveling System** with 25+ levels
-- **Achievement Badges** with multiple categories:
-  - 🎯 Milestone badges (first task, 10 tasks, 50 tasks, 100 tasks)
-  - 🔥 Streak badges (3-day, 7-day, 30-day streaks)
-  - 🧠 Focus badges (10h, 50h, 100h focus time)
-  - ⭐ Level badges (Level 5, 10, 25)
-  - 🎪 Special achievements (Early Bird, Night Owl, Perfect Day)
-- **Leaderboards** with multiple metrics
-- **Daily Streaks** tracking and motivation
-- **Progress Tracking** with visual indicators
+### **Frontend (Vite + React)**
+- **React 18** - Modern React with hooks
+- **Vite** - Lightning-fast build tool
+- **Redux Toolkit** - State management
+- **React Router** - Client-side routing
+- **Tailwind CSS** - Utility-first styling
+- **React Hook Form** - Form handling
+- **Axios** - API requests
+- **React Query** - Server state management
+- **Heroicons** - Beautiful icons
 
-### 📊 Analytics & Reporting
-- **Dashboard Analytics** with comprehensive metrics
-- **Productivity Charts** using Recharts
-- **Weekly/Monthly Reports** with AI-generated insights
-- **Focus Time Trends** and patterns analysis
-- **Task Completion Statistics** by category
-- **Exportable Reports** (PDF generation ready)
-
-### 🎨 Modern UI/UX
-- **Responsive Design** for all devices
-- **Dark/Light Mode** toggle
-- **Beautiful Animations** with Framer Motion
-- **Tailwind CSS** with custom design system
-- **Micro-interactions** and smooth transitions
-- **Confetti Celebrations** for achievements
-- **Toast Notifications** with react-hot-toast
-
-### ⚙️ Settings & Personalization
-- **Theme Customization** (5 color schemes)
-- **Focus Preferences** (session durations, break times)
-- **Notification Settings** (break reminders, daily summaries)
-- **Blocklist/Allowlist** for distraction management
-- **Timezone Configuration**
-
-## 🏗️ Architecture
-
-### Backend (Node.js/Express)
-```
-backend/
-├── models/           # MongoDB schemas
-│   ├── User.js      # User model with gamification
-│   ├── Task.js      # Task model with subtasks
-│   └── FocusSession.js # Session tracking
-├── routes/          # API endpoints
-│   ├── auth.js      # Authentication routes
-│   ├── tasks.js     # Task management
-│   ├── sessions.js  # Focus sessions
-│   ├── user.js      # User profile
-│   ├── analytics.js # Reports & charts
-│   ├── ai.js        # OpenAI integration
-│   └── gamification.js # XP & badges
-├── middleware/      # Custom middleware
-├── config/          # Configuration files
-└── utils/           # Utility functions
-```
-
-### Frontend (React.js)
-```
-frontend/src/
-├── components/      # Reusable UI components
-├── pages/          # Main application pages
-├── store/          # Redux Toolkit store
-├── hooks/          # Custom React hooks
-├── services/       # API service functions
-├── utils/          # Helper functions
-└── styles/         # Tailwind CSS styles
-```
+### **Backend (Node.js + Express)**
+- **Node.js** - JavaScript runtime
+- **Express.js** - Web framework
+- **MongoDB** - NoSQL database
+- **Mongoose** - ODM for MongoDB
+- **JWT** - Authentication tokens
+- **bcrypt** - Password hashing
+- **Express Validator** - Input validation
+- **Multer** - File uploads
+- **CORS** - Cross-origin requests
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### **Prerequisites**
 - Node.js (v14 or higher)
 - MongoDB (local or Atlas)
 - Git
 
-### Installation
+### **Installation**
 
-1. **Clone the repository**
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd focusmate
+   ```
+
+2. **Install backend dependencies:**
+   ```bash
+   cd backend
+   npm install
+   ```
+
+3. **Install frontend dependencies:**
+   ```bash
+   cd ../frontend
+   npm install
+   ```
+
+4. **Environment Setup:**
+
+   **Backend (.env):**
+   ```env
+   MONGODB_URI=mongodb://localhost:27017/focusmate
+   JWT_SECRET=your-super-secret-jwt-key
+   JWT_EXPIRES_IN=7d
+   NODE_ENV=development
+   PORT=5000
+   GOOGLE_CLIENT_ID=your-google-client-id
+   GOOGLE_CLIENT_SECRET=your-google-client-secret
+   OPENAI_API_KEY=your-openai-api-key
+   ```
+
+   **Frontend (.env):**
+   ```env
+   VITE_API_URL=http://localhost:5000/api
+   ```
+
+5. **Start the application:**
+
+   **Backend (Terminal 1):**
+   ```bash
+   cd backend
+   npm start
+   ```
+
+   **Frontend (Terminal 2):**
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+
+6. **Access the application:**
+   - Frontend: http://localhost:5173
+   - Backend API: http://localhost:5000/api
+
+## 📁 Project Structure
+
+```
+focusmate/
+├── backend/                 # Express.js backend
+│   ├── config/             # Database configuration
+│   ├── controllers/        # Route controllers
+│   ├── middleware/         # Custom middleware
+│   ├── models/            # Mongoose models
+│   ├── routes/            # API routes
+│   ├── uploads/           # File uploads
+│   ├── utils/             # Helper utilities
+│   ├── .env.example       # Environment template
+│   ├── package.json       # Backend dependencies
+│   └── server.js          # Entry point
+├── frontend/               # Vite + React frontend
+│   ├── public/            # Static assets
+│   ├── src/
+│   │   ├── components/    # React components
+│   │   │   ├── auth/      # Authentication components
+│   │   │   ├── common/    # Shared components
+│   │   │   ├── tasks/     # Task management
+│   │   │   └── focus/     # Focus timer
+│   │   ├── pages/         # Page components
+│   │   │   ├── auth/      # Login/Register
+│   │   │   └── *.jsx      # Main pages
+│   │   ├── store/         # Redux store
+│   │   │   └── slices/    # Redux slices
+│   │   ├── services/      # API services
+│   │   ├── App.jsx        # Main app component
+│   │   └── main.jsx       # Entry point
+│   ├── package.json       # Frontend dependencies
+│   ├── vite.config.js     # Vite configuration
+│   └── tailwind.config.js # Tailwind configuration
+├── README.md              # This file
+└── .gitignore            # Git ignore rules
+```
+
+## 🔧 Available Scripts
+
+### **Frontend**
 ```bash
-git clone https://github.com/yourusername/focusmate.git
-cd focusmate
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
 ```
 
-2. **Install dependencies**
+### **Backend**
 ```bash
-npm run install-all
+npm start            # Start production server
+npm run dev          # Start development server with nodemon
+npm test             # Run tests
 ```
 
-3. **Environment Setup**
+## 📊 API Endpoints
 
-Create `backend/.env`:
-```env
-# Database
-MONGODB_URI=mongodb://localhost:27017/focusmate
-
-# JWT
-JWT_SECRET=your_super_secret_jwt_key_here
-JWT_EXPIRE=7d
-
-# Google OAuth
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-
-# OpenAI
-OPENAI_API_KEY=your_openai_api_key
-
-# Email (Gmail)
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
-
-# Server
-PORT=5000
-NODE_ENV=development
-CLIENT_URL=http://localhost:3000
-```
-
-4. **Start the application**
-```bash
-npm run dev
-```
-
-This starts both backend (port 5000) and frontend (port 3000) concurrently.
-
-## 📱 Usage Guide
-
-### Getting Started
-1. **Sign Up** with email or Google OAuth
-2. **Complete Profile** setup with preferences
-3. **Create Your First Task** and start focusing!
-
-### Focus Sessions
-1. Click **"Start Focus Session"** on dashboard
-2. Select **session type** and duration
-3. **Add tasks** to work on during session
-4. Click **"Start"** and focus!
-5. Track distractions and take breaks as needed
-
-### Task Management
-- **Add Task**: Click "+" button, fill details
-- **Edit Task**: Click on task to modify
-- **Complete Task**: Check the checkbox
-- **Drag & Drop**: Reorder tasks by dragging
-- **Categories**: Organize by work, study, personal, etc.
-
-### AI Features
-- **Chat**: Ask the AI assistant for productivity tips
-- **Suggestions**: Get personalized task recommendations
-- **Analysis**: Receive insights on your productivity patterns
-
-### Gamification
-- **Earn XP**: Complete tasks and focus sessions
-- **Level Up**: Gain levels and unlock new features
-- **Badges**: Earn achievements for various milestones
-- **Streaks**: Maintain daily activity streaks
-
-## 🔧 Development
-
-### Backend Development
-```bash
-cd backend
-npm run dev  # Starts with nodemon
-```
-
-### Frontend Development
-```bash
-cd frontend
-npm start   # Starts React dev server
-```
-
-### Database
-The app uses MongoDB with Mongoose ODM. Models include:
-- **User**: Authentication, preferences, gamification data
-- **Task**: Todo items with categories and priorities
-- **FocusSession**: Pomodoro and focus session tracking
-
-### API Documentation
-Key API endpoints:
-
-**Authentication**
+### **Authentication**
 - `POST /api/auth/register` - User registration
 - `POST /api/auth/login` - User login
-- `GET /api/auth/google` - Google OAuth
-- `POST /api/auth/forgot-password` - Password reset
+- `POST /api/auth/logout` - User logout
+- `GET /api/auth/me` - Get current user
 
-**Tasks**
-- `GET /api/tasks` - Get user tasks (with filtering)
+### **Tasks**
+- `GET /api/tasks` - Get all tasks
 - `POST /api/tasks` - Create new task
+- `GET /api/tasks/:id` - Get specific task
 - `PUT /api/tasks/:id` - Update task
 - `DELETE /api/tasks/:id` - Delete task
 
-**Focus Sessions**
-- `POST /api/sessions` - Create session
-- `PUT /api/sessions/:id/start` - Start session
-- `PUT /api/sessions/:id/complete` - Complete session
+### **Focus Sessions**
+- `GET /api/sessions` - Get all sessions
+- `POST /api/sessions` - Create new session
+- `POST /api/sessions/:id/start` - Start session
+- `POST /api/sessions/:id/pause` - Pause session
+- `POST /api/sessions/:id/complete` - Complete session
 
-**AI Features**
-- `POST /api/ai/chat` - Chat with AI
-- `POST /api/ai/suggest-tasks` - Get task suggestions
-- `POST /api/ai/daily-summary` - Generate daily summary
+## 🎯 Current Status
 
-## 🎨 Customization
+### **✅ Completed Features**
+- ✅ Full authentication system
+- ✅ Responsive layout with navigation
+- ✅ Dark/Light theme support
+- ✅ Redux store setup
+- ✅ API integration layer
+- ✅ Backend API with all endpoints
+- ✅ Database models and relationships
+- ✅ Form validation and error handling
 
-### Themes
-FocusMate supports 5 color schemes:
-- **Blue** (default)
-- **Green** 
-- **Purple**
-- **Orange**
-- **Pink**
+### **🚧 Ready for Implementation**
+- Task management interface
+- Focus timer with circular progress
+- Analytics dashboard
+- User settings panel
+- Gamification features
 
-### Adding New Features
-1. **Backend**: Add routes in `/routes`, models in `/models`
-2. **Frontend**: Add components in `/components`, pages in `/pages`
-3. **State**: Update Redux store in `/store`
+## 🔒 Security Features
 
-## 🌐 Deployment
+- JWT-based authentication
+- Password hashing with bcrypt
+- Input validation and sanitization
+- CORS protection
+- Rate limiting ready
+- Environment variable protection
 
-### Backend (Render/Railway)
-1. Create new service
-2. Connect GitHub repository
-3. Set environment variables
-4. Deploy
+## 📱 Responsive Design
 
-### Frontend (Vercel/Netlify)
-1. Connect GitHub repository
-2. Set build command: `cd frontend && npm run build`
-3. Set output directory: `frontend/build`
-4. Deploy
+- Mobile-first approach
+- Tablet and desktop optimized
+- Touch-friendly interface
+- Adaptive layouts
 
-### Database (MongoDB Atlas)
-1. Create cluster
-2. Get connection string
-3. Update `MONGODB_URI` in environment
+## 🌟 Why Vite?
+
+- ⚡ **Lightning fast** - Instant HMR and fast builds
+- 🔧 **No conflicts** - Modern dependency resolution
+- 📦 **Optimized** - Tree-shaking and code splitting
+- 🛠 **Better DX** - Excellent development experience
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open Pull Request
+2. Create a feature branch
+3. Make your changes
+4. Add tests if needed
+5. Submit a pull request
 
-## 📝 License
+## � License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgments
 
-- **OpenAI** for AI-powered features
-- **Tailwind CSS** for beautiful styling
-- **React ecosystem** for amazing libraries
-- **MongoDB** for flexible data storage
-- **All contributors** who help improve FocusMate
-
-## 📞 Support
-
-- 📧 Email: support@focusmate.app
-- 💬 Discord: [FocusMate Community](https://discord.gg/focusmate)
-- 📖 Documentation: [docs.focusmate.app](https://docs.focusmate.app)
+- Built with modern React and Node.js best practices
+- UI inspired by modern productivity applications
+- Icons provided by Heroicons
+- Styling powered by Tailwind CSS
 
 ---
 
-**Start your productivity journey with FocusMate today! 🚀**
-
-*Built with ❤️ by the FocusMate team*
+**Ready to boost your productivity? Get started with FocusMate!** 🚀
